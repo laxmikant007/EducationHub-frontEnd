@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 import {
   Table,
   TableBody,
@@ -8,8 +9,10 @@ import {
   TableRow,
   Paper,
   Grid,
-  Button,
+  
 } from '@mui/material';
+
+import './Test.css'
 
 function CreateTest() {
   const subjects = [
@@ -61,7 +64,7 @@ function CreateTest() {
                     <TableCell>{subject.name}</TableCell>
                     <TableCell>{subject.id}</TableCell>
                     <TableCell>
-                      <Button variant='contained' color='success'>
+                      <Button className='btn'  >
                         Create 
                       </Button>
                     </TableCell>
